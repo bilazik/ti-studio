@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TI Studio: музыкальная студия</title>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-black.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e2e2e">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+
+  <body>
+
+    <div style="display: none;">
+      <include src="build/images/sprite.svg"></include>
+    </div>
+
+    <header class="page-header" role="banner">
+
+      <h1 class="visually-hidden">TI Studio: музыкальная студия</h1>
+
+      <nav class="nav" role="navigation">
+        <span class="nav__logo-mock">TI Studio</span>
+        <ul class="nav__menu list">
+          <li class="nav__item list__item">
+            <a class="nav__link" href="#service">Услуги</a>
+          </li>
+          <li class="nav__item list__item">
+            <a class="nav__link" href="#equipment">Оборудование</a>
+          </li>
+          <li class="nav__item list__item">
+            <a class="nav__link" href="#price">Цены</a>
+          </li>
+          <li class="nav__item list__item">
+            <a class="nav__link" href="#about">Портфолио</a>
+          </li>
+          <li class="nav__item list__item">
+            <a class="nav__link" href="#contact">Связаться</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="intro" role="region" aria-label="Услуги TI Studio: категории">
+        <h2 class="visually-hidden">Основные категории услуг TI Studio</h2>
+        <div class="intro__item intro__item--ti">
+          <img class="intro__bg" src="images/square-bg.svg">
+          <div class="intro__content intro__content--no-events">
+            <!-- <h2 class="intro__headline headline">TI</h2> -->
+            <img class="intro__logo" src="images/logo.svg" width="200" height="200" alt="">
+          </div>
+        </div>
+        <div class="intro__item">
+          <img class="intro__bg" src="images/square-bg.svg">
+          <a class="intro__content" href="#service-record" aria-label="Услуга: звукозапись">
+            <b class="intro__name">Запись</b>
+            <svg class="intro__pic" width="100" height="100">
+              <use xlink:href="images/sprite.svg#icon-record"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="intro__item">
+          <img class="intro__bg" src="images/square-bg.svg">
+          <div class="intro__content">
+            <a class="intro__content" href="#service-mix" aria-label="Услуга: сведение мультитрека">
+              <b class="intro__name">Сведение</b>
+              <svg class="intro__pic" width="70" height="70">
+                <use xlink:href="images/sprite.svg#icon-mix"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="intro__item">
+          <img class="intro__bg" src="images/square-bg.svg">
+          <a class="intro__content" href="#service-master" aria-label="Услуга: мастеринг">
+            <b class="intro__name">Мастеринг</b>
+            <svg class="intro__pic" width="70" height="68">
+              <use xlink:href="images/sprite.svg#icon-master"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="page-main" role="main">
+
+      <section class="service" id="service" role="region" aria-label="Подробнее об услугах TI Studio">
+        <div class="container">
+          <h2 class="service__headline headline">Что мы предлагаем?</h2>
+          <p class="service__subline subline">Студия <b>TI</b>&nbsp;&mdash; идеальное место для постпроизводственной обработки звука, то есть, для сведения и мастеринга. Именно для этого она создавалась. Однако, как в любой, даже самой маленькой, студии, у нас есть аппаратура и возможности для звукозаписи.</p>
+          <ul class="service__list list">
+            <li class="service__item service__item--full list__item" id="service-record">
+              <b class="service__name">Запись</b>
+              <p class="service__text"><a href="#equipment">Парк оборудования</a> позволяет нам качественно записывать акустические инструменты (кроме барабанов) и вокал.</p>
+            </li>
+            <li class="service__item list__item" id="service-mix">
+              <b class="service__name">Сведение</b>
+              <p class="service__text">Работа в пределах одной композиции&nbsp;&mdash; выстраивание из уже записанных дорожек единого трека.</p>
+            </li>
+            <li class="service__item list__item" id="service-master">
+              <b class="service__name">Мастеринг</b>
+              <p class="service__text">Работа с готовыми композициями&nbsp;&mdash; увеличение громкости с сохранением исходного качества, общая эквализация.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="equipment" id="equipment" role="region" aria-label="Наше оборудование">
+        <div class="container">
+          <h2 class="equipment__headline headline">Оборудование</h2>
+          <p class="equipment__subline subline">Маленький мир, где создаётся музыка&nbsp;&mdash; это не просто сухой список наименований аппаратуры. Это подготовленная комната, в которой нет места нежелательным отражениям и искажениям. Здесь только чистый звук&nbsp;&mdash; такой, какой он есть.</p>
+          <ul class="equipment__list list">
+            <li class="equipment__item equipment__item--full list__item">
+              <b class="equipment__name">Комната</b>
+              <p class="equipment__text">Когда пальцы касаются струн, а воздух&nbsp;&mdash; связок вокалиста, рождается звук. Моя задача&nbsp;&mdash; сохранить его, целым и невредимым передать сверхчувствительной мембране микрофона. А когда дело доходит до постпроизводственной обработки, вздрагивают динамики мониторов, и звук снова должен в неизменном виде достичь уха звукорежиссёра.</p>
+              <p class="equipment__text">Вот почему так важна звукоизоляция (защита от посторонних шумов) и акустическое оформление (предотвращение ранних отражений и связанных с ними искажений).</p>
+            </li>
+            <li class="equipment__item list__item">
+              <b class="equipment__name">Программное обеспечение</b>
+              <ul class="list">
+                <li class="list__item">Mac&nbsp;OS&nbsp;X</li>
+                <li class="list__item">Logic&nbsp;Pro&nbsp;X</li>
+              </ul>
+            </li>
+            <li class="equipment__item list__item">
+              <b class="equipment__name">Микрофоны</b>
+              <ul class="list">
+                <li class="list__item">Neumann KM 185 (стереопара)</li>
+                <li class="list__item">Shure SM 7B</li>
+              </ul>
+            </li>
+            <li class="equipment__item list__item">
+              <b class="equipment__name">Системы мониторинга</b>
+              <ul class="list">
+                <li class="list__item">Yamaha NS-10 M Studio</li>
+                <li class="list__item">Avantone MixCubes</li>
+              </ul>
+            </li>
+            <li class="equipment__item list__item">
+              <b class="equipment__name">Наушники</b>
+              <ul class="list">
+                <li class="list__item">Beyerdynamic DT 880 Pro</li>
+                <li class="list__item">Beyerdynamic DT 770 Pro</li>
+              </ul>
+            </li>
+            <li class="equipment__item list__item">
+              <b class="equipment__name">Звуковая карта</b>
+              <ul class="list">
+                <li class="list__item">Apogee Duet 2</li>
+              </ul>
+            </li>
+            <li class="equipment__item list__item">
+              <b class="equipment__name">Прочее оборудование</b>
+              <ul class="list">
+                <li class="list__item">DI Box Radial JDI</li>
+              </ul>
+            </li>
+            <li class="equipment__item list__item">
+              <b class="equipment__name">Музыкальные инструменты</b>
+              <ul class="list">
+                <li class="list__item">Пианино Гамма</li>
+                <li class="list__item">Классическая гитара Perez 620 Cedar</li>
+                <li class="list__item">Электрогитара Jackson WRXT</li>
+                <li class="list__item">Электрогитара Washburn WR120</li>
+                <li class="list__item">Бас-гитара Warwick Corvette</li>
+                <li class="list__item">Синтезатор Korg X50</li>
+                <li class="list__item">Миди клавиатура Evolution MK-249</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="price" id="price" role="region" aria-label="Цены в TI Studio">
+        <div class="container">
+          <h2 class="price__headline headline">Сколько это стоит?</h2>
+          <div class="price__wrapper">
+            <table class="price__table" border="0" cellpadding="0" cellspacing="0" width="100%" role="table" aria-label="Прайс-лист">
+              <tr class="price__row">
+                <th class="price__cell price__cell--header">
+                  Что
+                </th>
+                <th class="price__cell price__cell--header">
+                  Сколько (руб.)
+                </th>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Запись, за&nbsp;час <span>для тех, кто заказывает сведение</span>
+                </td>
+                <td class="price__cell">
+                  300
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Запись, за&nbsp;час <span>для всех остальных случаев</span>
+                </td>
+                <td class="price__cell">
+                  600
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Сведение мультитрека
+                </td>
+                <td class="price__cell">
+                  от 2&nbsp;000
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Мастеринг <span>для тех, кто заказывает сведение</span>
+                </td>
+                <td class="price__cell">
+                  0
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Мастеринг, за&nbsp;трек <span>для всех остальных случаев</span>
+                </td>
+                <td class="price__cell">
+                  1&nbsp;000
+                </td>
+              </tr>
+            </table>
+          </div>
+          <i class="price__info">Конечная стоимость, разумеется, может отличаться от указанных цифр&nbsp;&mdash; это естественным образом зависит от объёма, сложности проекта, качества исходных файлов, оттого, насколько вы постоянный клиент, и множества других факторов. Также цена увеличится, если необходимо "оживление" партий различных миди-инструментов (барабанов, например).</i>
+        </div>
+      </section>
+
+      <section class="about" id="about" role="region" aria-label="Чуть подробнее о студии и портфолио">
+        <div class="container">
+          <b class="about__headline headline">TI Studio&nbsp;&mdash;</b>
+          <p class="about__subline subline">уютная домашняя студия и один звукорежиссёр, который обожает своё дело.</p>
+          <p class="about__text">Меня зовут Александр&nbsp;Михайлов, а вот трек, над которым я только что закончил работать. Это кавер проекта <b>Sky&nbsp;Crypt</b> на песню "Guardians&nbsp;of&nbsp;Asgaard" шведской группы <b>Amon&nbsp;Amarth</b>.</p>
+          <audio id="track-to-play">
+            <source src="audio/guardians-of-asgaard-amon-amarth-cover.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает вопроизведение аудио :(
+          </audio>
+          <div class="about__player player">
+            <button class="player__button player__button--play" id="control-button" onclick="playSong()" title="Слушать" aria-label="Слушать"></button>
+            <span class="player__time" id="time-passed">00:00</span>
+            <p class="player__progress" id="control-timeline">
+              <span class="player__playhead" id="control-playhead"></span>
+            </p>
+            <span class="player__time" id="time-left">00:00</span>
+            <p class="player__volume">
+              <button class="player__volume-control unbutton" id="control-volume-down" title="Тише" aria-label="Тише">&minus;</button>
+              <button class="player__volume-control unbutton" id="control-volume-up" title="Громче" aria-label="Громче">&plus;</button>
+            </p>
+          </div>
+          <p class="about__text">Моё полное портфолио, то есть, список релизов, можно найти <a href="https://vk.com/topic-115170867_36797059" target="_blank" aria-label="Список выпущенных студией альбомов, сайт ВКонтакте откроется в новой вкладке">здесь</a>.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer" role="contentinfo">
+
+      <section class="footer" id="contact" role="region" aria-label="Как связаться с TI Studio">
+        <div class="container">
+          <h2 class="footer__headline headline">Контактная информация</h2>
+          <div class="footer__wrapper">
+            <p class="footer__text">Географически <b>TI Studio</b> расположена в Ижевске, в тихом русском городе. Однако я приглашаю музыкантов отовсюду, чтобы поработать вместе: в какой бы точке планеты вы ни находились, приезжайте сами или присылайте "исходники". Границы и расстояния&nbsp;&mdash; не помеха для искусства.</p>
+            <div class="footer__buttons">
+              <ul class="footer__social social list">
+                <li class="social__item list__item">
+                  <a class="social__link" href="https://vk.com/studioti" target="_blank" aria-label="Группа ВКонтакте, откроется в новой вкладке">
+                    <svg class="social__pic social__pic--vkontakte" width="50" height="50">
+                      <use xlink:href="images/sprite.svg#icon-vkontakte"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item list__item">
+                  <a class="social__link" href="https://www.facebook.com/dementedwarrior" target="_blank" aria-label="Профиль на Facebook, откроется в новой вкладке">
+                    <svg class="social__pic social__pic--facebook" width="50" height="50">
+                      <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item list__item">
+                  <a class="social__link" href="mailto:dementedwarrior@gmail.com" aria-label="Написать письмо, откроется почтовый клиент">
+                    <svg class="social__pic social__pic--gmail" width="50" height="50">
+                      <use xlink:href="images/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a class="footer__write-now button" href="https://t.me/dementedwarrior" target="_blank" aria-label="Написать в Telegram">Пишите прямо сейчас</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="copyright" role="region" aria-label="Авторские права">
+        <h2 class="visually-hidden">Права на сайт и всю информацию</h2>
+        <div class="container">
+          <p class="copyright__text">&copy; TI Studio и <a href="https://healdementia.github.io" target="_blank" aria-label="Профиль разработчика сайта на GitHub">healdementia</a>, <span id="years">2018</span></p>
+        </div>
+      </section>
+
+      <button class="to-top unbutton" id="to-top" type="button" aria-label="Вернуться в начало страницы">&uarr;</button>
+
+      <!-- Icons made by <a href="http://www.freepik.com">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a> -->
+
+    </footer>
+
+    <script src="js/code.min.js" async></script>
+
+  </body>
+
+</html>

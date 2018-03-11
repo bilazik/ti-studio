@@ -1,0 +1,49 @@
+.price {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.price__table {
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.price__cell {
+  padding-top: 20px;
+  padding-right: 26px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  text-align: left;
+  border-bottom: 1px solid #808080;
+
+  &:last-child {
+    min-width: 180px;
+    padding-right: 0;
+    text-align: right;
+  }
+
+  &--header {
+    font-size: 20px;
+    line-height: 26px;
+    font-family: $bold;
+  }
+}
+
+.price__cell > span {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6c6c6c;
+}
+
+.price__info {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+}
+
+.price__wrapper {
+  width: 100%;
+  overflow-x: auto;
+}

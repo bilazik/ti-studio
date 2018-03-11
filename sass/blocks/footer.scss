@@ -1,0 +1,71 @@
+.footer {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 86px;
+}
+
+.footer__headline {
+  margin-bottom: 34px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer__text {
+  margin-top: 0;
+
+  & > b {
+    font-family: $bold;
+  }
+}
+
+.footer__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 26px;
+}
+
+.footer__write-now {
+  padding-right: 72px;
+  background-color: #000000;
+  background-image: url("../images/telegram.svg"),
+                    url("../images/gradient-tri.svg");
+  background-repeat: no-repeat;
+  background-position: 88% center, center;
+  background-size: 22px auto, 100%;
+  transition: background-size 1s ease-out;
+
+  &:hover,
+  &:focus {
+    background-size: 22px auto, 120%;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 768px) {
+  .footer__write-now {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 499px) {
+  .footer__buttons {
+    flex-direction: column;
+  }
+
+  .footer__social {
+    margin-bottom: 20px;
+  }
+}

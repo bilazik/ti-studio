@@ -1,0 +1,103 @@
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 310px;
+  height: 34px;
+  margin: 0;
+  padding: 0 12px;
+  background-color: rgba(#444444, 0.7);
+
+  & > * {
+    flex-shrink: 0;
+    margin: 0 5px;
+  }
+}
+
+.player__button {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  box-shadow: none;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s opacity linear;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 0;
+    border-radius: 1px;
+    box-shadow: 0 0 0 3px rgba(#8ad3ff, 0.5);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 3px rgba(#8ad3ff, 0.7);
+  }
+
+  &--play {
+    background-image: url("../images/audio-play.svg");
+  }
+
+  &--pause {
+    background-image: url("../images/audio-pause.svg");
+  }
+}
+
+.player__time {
+  display: inline-block;
+  font-size: 12px;
+  color: #989898;
+}
+
+.player__progress {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 5px;
+  background-color: #787878;
+  border-radius: 3px;
+  transition: 0.3s background-color linear;
+
+  &:hover,
+  &:focus {
+    background-color: #939393;
+    cursor: pointer;
+  }
+}
+
+.player__playhead {
+  flex-shrink: 0;
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin-left: 0;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  transition: 0.3s opacity linear;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.player__volume-control {
+  display: inline-block;
+  padding: 0 3px;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}

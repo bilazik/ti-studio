@@ -1,0 +1,46 @@
+.equipment {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/gradient-sphere.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.equipment__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.equipment__item {
+  width: 48%;
+  margin-top: 24px;
+
+  &--full {
+    width: 100%;
+  }
+}
+
+.equipment__name {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-family: $bold;
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 768px) {
+  .equipment {
+    background-position: 10%;
+  }
+}
+
+@media (max-width: 499px) {
+  .equipment__item {
+    width: 100%;
+  }
+}

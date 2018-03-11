@@ -1,0 +1,134 @@
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000000;
+  background-image: url("../images/gradient-tri.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.intro__item {
+  position: relative;
+  width: 25%;
+}
+
+.intro__bg {
+  width: 100%;
+  height: auto;
+}
+
+.intro__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #000000;
+    background-color: #ffffff;
+    outline: 0;
+    box-shadow: none;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &--no-events {
+    pointer-events: none;
+  }
+}
+
+.intro__headline {
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.intro__logo {
+  width: 250px;
+}
+
+.intro__name {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 1.6px;
+  font-family: $black;
+  text-transform: lowercase;
+}
+
+.intro__pic {
+  display: inline;
+  fill: #ffffff;
+  height: 100px;
+}
+
+.intro__content:hover .intro__pic,
+.intro__content:focus .intro__pic {
+  fill: #000000;
+}
+
+////// r e s p o n s i v e //////
+
+@media (max-width: 1199px) {
+  .intro__content {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .intro {
+    background-position: 77% 0;
+    background-size: cover;
+  }
+
+  .intro__item {
+    width: 33.3%;
+
+    &--ti {
+      display: none;
+    }
+  }
+
+  .intro__name {
+    font-size: 22px;
+  }
+}
+
+@media (max-width:599px) {
+  .intro__item {
+    width: 50%;
+
+    &--ti {
+      display: flex;
+    }
+  }
+
+  .intro__name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro {
+    background-position: 71% 0;
+  }
+
+  .intro__item {
+    width: 100%;
+
+    &--ti {
+      display: none;
+    }
+  }
+}

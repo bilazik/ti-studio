@@ -1,0 +1,43 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  margin: 0 12px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.social__link {
+  display: inline-block;
+  line-height: 12px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
+.social__pic {
+  width: 20px;
+  height: 20px;
+  fill: #aaaaaa;
+
+  &--gmail {
+    width: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #444444;
+  }
+
+  &:active {
+    fill: #000000;;
+  }
+}

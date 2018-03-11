@@ -1,0 +1,46 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/ti-studio-vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__headline {
+  display: block;
+}
+
+.about__subline {
+  max-width: 320px;
+}
+
+.about__text > b {
+  font-family: $bold;
+}
+
+.about__headline,
+.about__subline,
+.about__text {
+  text-shadow: 0 0 22px rgba(0, 0, 0, 0.7);
+}
+
+////// r e s p o n s i v e //////
+
+
+@media (max-width: 768px) {
+
+  .about__subline,
+  .about__text {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 699px) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
+}
